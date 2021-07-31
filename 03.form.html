@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrap{
+            width: 800px;
+            margin: 50px auto;
+        } 
+        button{
+            width : 50%;
+            background-color: darkseagreen;
+            cursor: pointer;
+            border-radius: 4px;
+            border:none;
+            padding : 15px;
+        }
+
+        /* 마우스가 올라갔을 때, sudo 선택자  */
+        button:hover{
+            background-color: green;
+        }
+
+        input:hover{
+            background-color: lightgray;
+        }
+
+    </style>
+</head>
+<body>
+    <div id = "wrap">
+    <form action="a.jsp" method="POST">
+        <label for = "name">이름:</label>
+        <input id="name" type="text" name="myname" placeholder="이름입력" required><br>
+
+        <label for = "age">나이:</label>
+        <input id="age" type="number" name="myage" placeholder="나이입력" min="1" max="100" required><br>
+
+        <label for = "birth">생일:</label>
+        <input id="birth" type="date" name="mybirth"><br>
+        
+        <label for = "tel">전화번호:</label>
+        <input id="tel" type="tel" name="mytel" pattern="\d{3}-\d{3,4}-\d{4}" placeholder="000-0000-0000"><br>
+
+        <!-- <fieldset><legend>성별</legend>
+        <input id="red" type = "radio" value="남자" name="gender">
+        <label for = "red">남자</label>
+        <input id="blue" type = "radio" value="여자" name="gender">
+        <label for = "blue">여자</label><br></fieldset> -->
+
+
+    <!-- 라디오, 체크박스(중복가능) -->
+    <fieldset>
+        <legend>색상선택</legend>
+        <input id="red" type = "radio" value="빨강" name="color">
+        <label for = "red">빨강</label><br>
+        <input id="blue" type = "radio" value="파랑" name="color">
+        <label for = "blue">파랑</label><br>
+        <input id="yellow" type = "radio" value="노랑" name="color">
+        <label for = "yellow">노랑</label><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>취미선택</legend>
+        <input id="fish" type = "checkbox" value="낚시" name="hobby">
+        <label for = "fish">낚시</label><br>
+        <input id="golf" type = "checkbox" value="골프" name="hobby">
+        <label for = "golf">골프</label><br>
+        <input id="movie" type = "checkbox" value="영화" name="hobby">
+        <label for = "movie">영화</label><br>
+    </fieldset>
+
+
+    <!-- 셀렉트옵션 -->
+    <select name="company" size="3">
+        <option value="회사1">회사1</option>
+        <option value="회사2">회사2</option>
+        <option value="회사3">회사3</option>
+    </select><br>
+    
+
+    <!-- 장문의 글 입력 -->
+    <textarea name="mytxt" cols="50" rows="5"></textarea><br>
+
+
+    <label for = "time">시간</label>
+    <input id="time" type="time" name="mytime"><br>
+    
+    <!-- 파일 보내는 거 -->
+    <input type="file" name="myfile"><br><br><br>
+</div>
+        <button>확인</button>
+    </form>
+    
+</body>
+</html>

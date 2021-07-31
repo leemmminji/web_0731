@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 모든 것에 적용 */
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        #wrap{
+            padding: 40px;
+            background-color: whitesmoke;
+        }
+
+        /*헤더 설정*/
+        header{
+            padding: 5px;
+        }
+        header > a{
+            text-decoration: none;
+            color : black;
+        }
+
+        /*nav 설정*/
+        nav{
+            margin: 15px;
+        }
+        nav > ul{
+            list-style:none;
+            border-top : 1px solid red;
+            border-bottom: 1px solid red;
+            text-align : center
+        }
+
+        /*네비 ul의 자식의 li*/
+        nav > ul > li{
+            display : inline;
+            letter-spacing: 0.2em;
+            margin-left: 1.5em;
+        }
+
+        nav > ul > li >a{
+            text-decoration: none;
+            color : black;
+            text-transform: uppercase;
+            line-height: 3em;
+        }
+
+        nav > ul > li >a:hover{
+            color : red;
+            text-decoration: underline;
+
+        }
+
+        /*aside 설정*/
+        aside{
+            width:30%;
+            float: left;
+        }
+
+        aside > ul{
+            list-style : none;
+        }
+
+        aside > ul > li{
+            background-color: darkblue;
+            padding: 7px;
+            border-bottom: 1px solid black;
+        }
+
+        aside > ul > li > a{
+            text-decoration: none;
+            color : white;
+        }
+
+        aside > ul > li > a:hover{
+            color : red;
+        }
+
+
+        section{
+            width:70%;
+            float:right;
+        }
+
+
+        footer{
+            clear : both;
+            background-color: slategray;
+            color: white;
+            text-align:center;
+            padding : 2em;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="wrap"></div>
+    <header>
+        <img src="image/shop.jpg" width="50" height="50">
+        <a href = "index.html">my shopping</a>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="News.html">News</a></li>
+            <li><a href="About.html">About</a></li>
+        </ul>
+    </nav>
+
+    <aside>
+        <h3>항목</h3>
+        <ul>
+            <li><a href="c.html" target="myi">의류</a></li>
+            <li><a href="r.html" target="myi">레져</a></li>
+            <li><a href="News.html">스포츠</a></li>
+            <li><a href="About.html">식품</a></li>
+            <li><a href="About.html">가구</a></li>
+            <li><a href="About.html">인테리어</a></li>         
+        </ul>
+    </aside>
+
+    <section id="main">
+        <article>
+            <iframe name="myi" width="450" height="300" frameborder="0"></iframe>
+        </article>
+    </section>
+
+    <footer>
+        <div> 꼬리말 copy right &copy; 홍길동 </div>
+    </footer>
+</div>
+</body>
+</html>
